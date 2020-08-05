@@ -38,7 +38,7 @@ exports.getRentalboojk = async (req, res, next) => {
     "SELECT * " +
     "FROM book_user AS BU " +
     "JOIN book AS B " +
-    "WHERE BU.age <= B.limit_age " +
+    "WHERE BU.age >= B.limit_age " +
     "AND B.id = ? AND BU.id = ?";
   let data = [book_id, user_id];
 
