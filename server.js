@@ -14,5 +14,5 @@ app.use(morgan("common"));
 
 app.use("/api/v1/booksuserj", users);
 app.use("/api/v1/booksrentalj", rentalj);
-const PORT = process.env.PORTJ || 5551;
+const PORT = process.env.PORT || 5551;
 app.listen(PORT, console.log("JYP SERVER"));
